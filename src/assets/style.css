@@ -1,5 +1,8 @@
 body { height: 100vh }
 
+button { @apply focus:outline-none }
+
+
 .floor-hover::after {
   content: '';
   position: absolute;
@@ -23,4 +26,28 @@ body { height: 100vh }
 
 .transition-fill path {
   transition: fill;
+}
+
+.whiter--init {
+  position: relative;
+}
+
+.whiter--init::after {
+  position: absolute;
+  content: '';
+  background-color: #fff;
+  transition: opacity;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.whiter--init:hover::after {
+  opacity: .7;
+}
+
+.whiter::after {
+  opacity: .7;
 }
