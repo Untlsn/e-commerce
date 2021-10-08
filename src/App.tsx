@@ -1,5 +1,5 @@
-import type { Component } from "solid-js";
-import Header from "./components/Header";
+import { Component } from "solid-js";
+import Header from "./components/organisms/Header";
 
 const App: Component = () => {
   return (
