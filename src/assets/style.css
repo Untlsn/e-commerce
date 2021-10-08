@@ -1,0 +1,24 @@
+.floor-hover::after {
+  content: '';
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  width: 90%;
+  height: .25rem;
+  background-color: #FE7D1C;
+  transform: scaleY(0);
+  transition: transform .5s;
+  border-radius: 1rem;
+}
+
+.floor-hover:hover::after {
+  transform: scaleY(1);
+}
+
+.hover\:fill-black:hover path {
+  fill: black;
+}
+
+.transition-fill path {
+  transition: fill;
+}
